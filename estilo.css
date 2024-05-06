@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+#tabla {
+    border : "1"; 
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 20%;
+}
+#tabla th {
+    border-bottom: 1px solid rgb(0, 0, 0); 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: seagreen;
+    background: url("/fondoPantalla.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+th , label, legend{
+    color: white;
+}
+#formulario{
+    border : "1"; 
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 30%;   
+}
+#formulario div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    margin-bottom: 10px; 
+}
+#formulario label {
+    margin-right: 10px;
+    flex: 1; 
+}
+#formulario div button {
+    margin: 0 auto;
+    display: block;
+    font-size: 16px; 
+    padding: 10px 20px;
+}
+
+

@@ -25,10 +25,10 @@ class Persona{
         return retorno; 
     }
 
-    toJson(){
-        if(this.verificar(string)){
+    toJson(string){
+        if(this.verificar()){
             try{
-                return JSON.parse(string);
+                JSON.parse(string);
             }
             catch(error){
                 console.error("error al convertir en json " + error);
@@ -46,3 +46,5 @@ class Persona{
         }
     }
 }
+
+export default Persona;

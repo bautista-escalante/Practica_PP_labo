@@ -1,4 +1,4 @@
-import Persona from ".Clases\\Persona.js";
+import Persona from "/Clases/Persona.js";
 class Cliente extends Persona
 {
     compras;
@@ -10,4 +10,16 @@ class Cliente extends Persona
         this.telefono = telefono;
     }
 
+    verificar(){
+        if(this.compras < 0){
+            alert("error las compras no pueden ser negativas");
+        }
+        else if(this.telefono < 0){
+            alert("error telefono no puede ser negativo");
+        }
+        else if(this.compras == null || this.telefono == null){
+            alert("error campo vacio");
+        }
+    }
 }
+export default Cliente;
